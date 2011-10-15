@@ -13,10 +13,12 @@ main()
     P1OUT^=0x41;
     delay();
   }
+
 }
 void delay(void)
 {
   unsigned i;
   for(i=0;i<32000;i++);
+
 }
 
