@@ -1,0 +1,13 @@
+org 0xf800 
+
+start: mov.b #0x40 , 0x21 ; P1DIR = 0x40
+       mov.b #0x40 , 0x22 ; P1OUT = 0x40
+
+loop: jmp loop            ; while(1)
+
+org 0xfffe
+dw start
+
+
+
+
